@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edinburgh Proxy Viewings</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; line-height: 1.6; max-width: 800px; }
+    h1 { color: #2a2a2a; }
+    .button { background: #3b82f6; color: white; padding: 0.7em 1.2em; border: none; border-radius: 5px; text-decoration: none; }
+    input, textarea { width: 100%; max-width: 500px; padding: 0.5em; margin-bottom: 1em; }
+  </style>
+</head>
+<body>
+  <h1>🏠 Edinburgh Proxy Viewings</h1>
+  <p>Can't attend a flat viewing in Edinburgh? I’ll go for you — and send back a full video report within 24 hours.</p>
+
+  <h2>✅ How It Works</h2>
+  <ol>
+    <li>You send me the listing and a preferred time</li>
+    <li>I attend the viewing in person</li>
+    <li>You receive a video tour, photos, and notes</li>
+  </ol>
+
+  <h2>💸 Pricing</h2>
+  <ul>
+    <li>£25 per viewing</li>
+    <li>£65 for a 3-viewing bundle</li>
+    <li>+£7 for a live WhatsApp call</li>
+  </ul>
+
+  <h2>🗓 Book a Viewing</h2>
+  <form action="https://your-flask-api.onrender.com/book" method="post">
+    <label>Name: <input name="name" required /></label><br>
+    <label>Email: <input name="email" type="email" required /></label><br>
+    <label>Property Link: <input name="link" required /></label><br>
+    <label>Preferred Time: <input name="time" required /></label><br>
+    <label>Notes: <textarea name="notes"></textarea></label><br>
+    <button class="button" type="submit">Submit Request</button>
+  </form>
+
+  <h2>📞 Contact</h2>
+  <p>Email: <a href="mailto:ianthipetrou077@gmail.com">ianthipetrou077@gmail.com</a></p>
+  <p>WhatsApp: +44 7543916654</p>
+</body>
+</html>
